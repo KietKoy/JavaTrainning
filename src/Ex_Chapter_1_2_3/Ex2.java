@@ -28,7 +28,6 @@ public class Ex2 {
         } else {
             rank = "D";
         }
-
-        System.out.println("Rank is: " + rank);
+        System.out.println("Average is: " + avg + "Rank is: " + rank);
     }
 }

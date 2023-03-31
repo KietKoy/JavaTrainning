@@ -12,14 +12,12 @@ public class Ex3 {
         System.out.print("b: ");
         double b = sc.nextDouble();
 
-        if(a == 0 && b != 0) {
+        if (a == 0 && b != 0) {
             System.out.println("The equation has no solution");
-        }
-        else if(a == 0 && b == 0) {
+        } else if (a == 0 && b == 0) {
             System.out.println("The equation has infinitely many roots");
-        }
-        else {
-            double res = -b/a;
+        } else {
+            double res = -b / a;
             System.out.printf("x is " + res);
         }
     }
