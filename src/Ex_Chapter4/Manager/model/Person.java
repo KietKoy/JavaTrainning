@@ -1,15 +1,15 @@
-package Ex_Chapter4.Bai1;
+package Ex_Chapter4.Manager.model;
 
 public class Person {
     private int empID;
     private String name;
-    private String dateOfBirths;
+    private String dateOfBirth;
     private String address;
 
-    public Person(int empID, String name, String dateOfBirths, String address) {
+    public Person(int empID, String name, String dateOfBirth, String address) {
         this.empID = empID;
         this.name = name;
-        this.dateOfBirths = dateOfBirths;
+        this.dateOfBirth = dateOfBirth;
         this.address = address;
     }
 
@@ -33,11 +33,11 @@ public class Person {
     }
 
     public String getDateOfBirths() {
-        return dateOfBirths;
+        return dateOfBirth;
     }
 
     public void setDateOfBirths(String dateOfBirths) {
-        this.dateOfBirths = dateOfBirths;
+        this.dateOfBirth = dateOfBirths;
     }
 
     public String getAddress() {
@@ -50,8 +50,8 @@ public class Person {
 
     @Override
     public String toString() {
-        String res = "Student's ID: " + empID + ", Student's Name: " + name
-                + ", Student's Date Of Birth: " + dateOfBirths + ", Student's Adress: " + address;
+        String res = "Student's ID: " + empID + "\nStudent's Name: " + name
+                + "\nStudent's Date Of Birth: " + dateOfBirth + "\nStudent's Address: " + address;
         return res;
     }
 }

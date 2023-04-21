@@ -1,4 +1,4 @@
-package Ex_Chapter4.Bai2;
+package Ex_Chapter4.Bai2.model;
 
 public class Student {
     private String id;
@@ -23,7 +23,7 @@ public class Student {
         this.mediumScore = mediumScore;
         if(mediumScore < 4) {
             this.classification = "Weak";
-        } else if (mediumScore >= 4 && mediumScore <6) {
+        } else if (mediumScore >= 4 && mediumScore < 6) {
             this.classification = "Medium";
         } else if (mediumScore >= 6 && mediumScore < 8) {
             this.classification = "Good";
@@ -100,13 +100,13 @@ public class Student {
     public String toString() {
         String result = "";
         result = "Student ID: " + id
-                + "\n Student Name: " + name
-                + "\n Student Age: " + age
-                + "\n Student Course: " + course
-                + "\n Student Address: " + address
-                + "\n Student School: " + school
-                + "\n Student Medium Score: " + mediumScore
-                + "\n Student Classification: " + classification;
+                + "\nStudent's Name: " + name
+                + "\nStudent's Age: " + age
+                + "\nStudent's Course: " + course
+                + "\nStudent's Address: " + address
+                + "\nStudent's School: " + school
+                + "\nStudent's Medium Score: " + mediumScore
+                + "\nStudent's Classification: " + classification;
         return result;
     }
 }
