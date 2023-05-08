@@ -50,8 +50,7 @@ public class Person {
 
     @Override
     public String toString() {
-        String res = "Student's ID: " + empID + "\nStudent's Name: " + name
+        return "Student's ID: " + empID + "\nStudent's Name: " + name
                 + "\nStudent's Date Of Birth: " + dateOfBirth + "\nStudent's Address: " + address;
-        return res;
     }
 }

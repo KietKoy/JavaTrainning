@@ -8,7 +8,7 @@ public class Ex7 {
         System.out.print("n: ");
         int n = scanner.nextInt();
         int index = n + n - 1;
-        int center = (int)(index/2);
+        int center = index/2;
         int left = center;
         int right = center;
         for (int i = 0; i < n; i++) {

@@ -1,21 +1,26 @@
-package Chapter4.model;
+package Chapter5.model;
+
+import java.util.Formatter;
 
 public class Product {
-    private int code;
+    private String code;
     private String description;
     private double price;
 
-    public Product(int code, String description, double price) {
+    public Product(String code, String description, double price) {
         this.code = code;
         this.description = description;
         this.price = price;
     }
 
-    public int getCode() {
+    public Product() {
+    }
+
+    public String getCode() {
         return code;
     }
 
-    public void setCode(int code) {
+    public void setCode(String code) {
         this.code = code;
     }
 
@@ -34,9 +39,7 @@ public class Product {
     public void setPrice(double price) {
         this.price = price;
     }
-
-    @Override
-    public String toString() {
-        return "Code: " + code + ", Description: " + description + ", price: " + price;
+    public String getFormattedPrice() {
+        return null;
     }
 }

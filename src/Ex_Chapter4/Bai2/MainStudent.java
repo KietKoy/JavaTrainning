@@ -15,14 +15,12 @@ public class MainStudent {
         Student student = new Student();
         while (true) {
             showMenu();
-            System.out.printf("Input: ");
+            System.out.print("Input: ");
             input = scanner.nextInt();
             scanner.nextLine();
             switch (input) {
-                case 1:
-                    student = inputStudent(scanner);
-                    break;
-                case 2:
+                case 1 -> student = inputStudent(scanner);
+                case 2 -> {
                     System.out.println(student.toString());
                     showOption();
                     status = scanner.nextInt();
@@ -30,12 +28,9 @@ public class MainStudent {
                     if (status == 1) {
                         studentList.add(student);
                     }
-                    break;
-                case 3:
-                    showAllStudent(studentList);
-                    break;
-                default:
-                    System.exit(0);
+                }
+                case 3 -> showAllStudent(studentList);
+                default -> System.exit(0);
             }
         }
 
@@ -77,13 +72,12 @@ public class MainStudent {
         System.out.print("Student Medium Score: ");
         mediumScore = sc.nextFloat();
         sc.nextLine();
-        Student student = new Student(id, name, age, course, address, school, mediumScore);
-        return student;
+        return new Student(id, name, age, course, address, school, mediumScore);
     }
 
     static void showAllStudent(List<Student> studentList) {
-        for (int i = 0; i < studentList.size(); i++) {
-            System.out.println(studentList.get(i).toString());
+        for (Student student : studentList) {
+            System.out.println(student.toString());
         }
     }
 }

@@ -7,10 +7,10 @@ public class Ex3 {
         Scanner sc = new Scanner(System.in);
         int a;
         int b;
-        System.out.printf("a: ");
+        System.out.print("a: ");
         a = sc.nextInt();
         sc.nextLine();
-        System.out.printf("b: ");
+        System.out.print("b: ");
         b = sc.nextInt();
 
         int result = greatestCommonDivisor(a, b);
