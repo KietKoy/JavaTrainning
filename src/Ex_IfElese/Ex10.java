@@ -1,5 +1,6 @@
 package Ex_IfElese;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ex10 {
